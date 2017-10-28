@@ -1,0 +1,107 @@
+body {
+  width: 420px;
+
+  margin: auto;
+  text-align: center;
+
+  font-family: 'crimson_textroman';
+  color: #51483F;
+}
+
+header {
+  margin-top: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+
+  font-family: 'crimson_textbold';
+  font-size: 1.5em;
+}
+
+h1::before {
+  content: '';
+
+  display: block;
+
+  width: 45px;
+  height: 45px;
+
+  background: url('../chat.svg') no-repeat;
+  background-size: 100%;
+
+  margin: auto;
+  margin-bottom: 4px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 12px auto;
+}
+
+form > * {
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 5px;
+
+  font-family: 'crimson_textroman';
+
+  outline: none;
+}
+
+form input {
+  width: 48%;
+
+  border: 1px solid #CCCCCC;
+}
+
+form textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+
+  border: 1px solid #CCCCCC;
+}
+
+::placeholder {
+  color: #AFAFAF;
+}
+
+#chatty {
+  display: none;
+  margin: auto;
+  color: orange;
+}
+
+form button {
+  text-transform: uppercase;
+
+  font-family: 'source_sans_proregular';
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #FFFFFF;
+
+  border: none;
+  background-color: #67C8D4;
+
+  width: 120px;
+  height: 2.5em;
+
+  outline: none;
+}
+
+form button:active {
+  border: 2px inset #CCCCCC;
+}
+
+form span {
+  margin-top: 0;
+  width: 100%;
+}
+
+[data-state='active'] {
+  box-shadow: 0 0 5px skyblue;
+}
